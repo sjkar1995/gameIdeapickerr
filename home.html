@@ -21,7 +21,27 @@
             border-radius: 8px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        #randomItem {
+        #controller {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+         #view {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+         #gtype {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+         #level {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+         #level {
             font-size: 24px;
             margin-top: 20px;
             color: #333;
@@ -43,40 +63,40 @@
 <body>
 
 
-    <div id="controller">
+    <div id="container">
     <h1>controller</h1>
     <button onclick="displayRandomcontroller()">Get Random controller</button>
-    <p id="randomItem"></p>
+    <p id="controller"></p>
 </div>
-    <div id="view">
+    <div id="container">
     <h1>view</h1>
     <button onclick="displayRandomview()">Get Random view</button>
     <p id="randomItem"></p>
 </div>
-    <div id="geners">
+    <div id="container">
     <h1>geners</h1>
     <button onclick="displayRandomgeners()">Get Random geners</button>
-    <p id="randomItem"></p>
+    <p id="view"></p>
 </div>
     </div>
-    <div id="gtype">
+    <div id="container">
     <h1>type</h1>
     <button onclick="displayRandomtype()">Get Random type</button>
-    <p id="randomItem"></p>
+    <p id="gtype"></p>
 </div>
     </div>
-    <div id="level">
+    <div id="container">
     <h1>level</h1>
     <button onclick="displayRandomlevel()">Get Random level</button>
-    <p id="randomItem"></p>
+    <p id="level"></p>
 </div>
     
 
 <script>
-    const controller = ["topdown","firstperson", "thirdperson"];
-    const view = ["2d", "3d", "2.5d"];
-    const geners = ["horror", "action","adventure","casual"];
-     const gtype = [ "puzzle", "enless", "escape","tower difence"];
+    const controller = [" topdown"," firstperson", " thirdperson"];
+    const view = [" 2d", " 3d", " 2.5d"];
+    const geners = [" horror", " action"," adventure"," casual"];
+     const gtype = [ " puzzle", " endless", " escape"," towerdifence"];
    
    
     const level = ["bord", "plateformer","openworld","dongoun","single level"];
