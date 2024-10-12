@@ -42,20 +42,83 @@
 </head>
 <body>
 
-<div id="container">
-    <h1>Random Item Picker</h1>
+
+    <div id="controller">
+    <h1>game them</h1>
     <button onclick="displayRandomItem()">Get Random Item</button>
     <p id="randomItem"></p>
 </div>
+    <div id="view">
+    <h1>game them</h1>
+    <button onclick="displayRandomItem()">Get Random Item</button>
+    <p id="randomItem"></p>
+</div>
+    <div id="geners">
+    <h1>game them</h1>
+    <button onclick="displayRandomItem()">Get Random Item</button>
+    <p id="randomItem"></p>
+</div>
+    </div>
+    <div id="gtype">
+    <h1>game them</h1>
+    <button onclick="displayRandomItem()">Get Random Item</button>
+    <p id="randomItem"></p>
+</div>
+    </div>
+    <div id="level">
+    <h1>game them</h1>
+    <button onclick="displayRandomItem()">Get Random Item</button>
+    <p id="randomItem"></p>
+</div>
+    
 
 <script>
-    const items = ["Apple", "Banana", "Orange", "Grapes", "Mango", "Pineapple", "Strawberry"];
+    const controller = ["topdown","firstperson", "thirdperson"];
+    const view = ["2d", "3d", "2.5d"];
+    const geners = ["horror", "action","adventure","casual"];
+     const gtype = [ "puzzle", "enless", "escape","tower difence"];
+   
+   
+    const level = ["bord", "plateformer","openworld","dongoun","single level"];
+    
 
-    function displayRandomItem() {
-        const randomIndex = Math.floor(Math.random() * items.length);
-        const randomItem = items[randomIndex];
-        document.getElementById("randomItem").textContent = randomItem;
+
+
+    function displayRandomcontroller() {
+        const randomIndex = Math.floor(Math.random() * controller.length);
+        const randomItem = controller[randomIndex];
+        document.getElementById("controller").textContent = controller;
+       
     }
+     function displayRandomview() {
+        const randomIndex = Math.floor(Math.random() * view.length);
+        const randomItem = view[randomIndex];
+        document.getElementById("view").textContent = view;
+       
+    }
+     function displayRandomgeners() {
+        const randomIndex = Math.floor(Math.random() *geners.length);
+        const randomItem = geners[randomIndex];
+       document.getElementById("geners").textContent = geners;
+       
+    }
+     function displayRandomtype() {
+        const randomIndex = Math.floor(Math.random() * gtype.length);
+        const randomItem = gtype[randomIndex];
+        document.getElementById("gtype").textContent = gtype;
+       
+    }
+     function displayRandomlevel() {
+        const randomIndex = Math.floor(Math.random() * level.length);
+        const randomItem = level[randomIndex];
+       document.getElementById("level").textContent =level;
+       
+    }
+     
+       
+        
+       
+        
 </script>
 
 </body>
