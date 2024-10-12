@@ -79,12 +79,8 @@
     <p id="geners"></p>
 </div>
   
-    <div id="container">
-    <h1>type</h1>
-    <button onclick="displayRandomtype()">Get Random type</button>
-    <p id="gtype"></p>
-</div>
-    </div>
+   
+ 
     <div id="container">
     <h1>level</h1>
     <button onclick="displayRandomlevel()">Get Random level</button>
@@ -95,11 +91,11 @@
 <script>
     const controller = [" topdown"," firstperson", " thirdperson"];
     const view = [" 2d", " 3d", " 2.5d"];
-    const geners = [" horror", " action"," adventure"," casual"];
-     const gtype = [ " puzzle", " endless", " escape"," towerdifence"];
+    const geners = [" horror", " action"," adventure"];
+    
    
    
-    const level = ["bord", "plateformer","dongoun","singlelevel"];
+    const level = ["bord", "plateformer","dongoun","singlelevel"," puzzle", " endless", " escape"," towerdifence"];
     
 
 
@@ -122,12 +118,7 @@
        document.getElementById("geners").textContent = randomItem;
        
     }
-     function displayRandomtype() {
-        const randomIndex = Math.floor(Math.random() * gtype.length);
-        const randomItem = gtype[randomIndex];
-        document.getElementById("gtype").textContent = randomItem;
-       
-    }
+     
      function displayRandomlevel() {
         const randomIndex = Math.floor(Math.random() * level.length);
         const randomItem = level[randomIndex];
