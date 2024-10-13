@@ -86,16 +86,23 @@
     <button onclick="displayRandomlevel()">Get Random level</button>
     <p id="level"></p>
 </div>
-    
+<div id="container">
+    <h1>element</h1>
+    <button onclick="displayRandomelement()">Get Random element</button>
+    <p id="element"></p>
 
 <script>
+
+    const element=["shooting","vahicals","zombies","creature","person","multiplayer"," puzzle","survival"];
+   
+
     const controller = [" topdown"," firstperson", " thirdperson"];
     const view = [" 2d", " 3d", " 2.5d"];
     const geners = [" horror", " action"," adventure"];
     
    
    
-    const level = ["bord", "plateformer","dongoun","singlelevel"," puzzle", " endless", " escape"," towerdifence"];
+    const level = ["bord", "plateformer","dongoun","singlelevel", " endless", " escape"," towerdifence","card"];
     
 
 
@@ -122,6 +129,12 @@
      function displayRandomlevel() {
         const randomIndex = Math.floor(Math.random() * level.length);
         const randomItem = level[randomIndex];
+       document.getElementById("level").textContent =randomItem;
+       
+    }
+    function displayRandomelement() {
+        const randomIndex = Math.floor(Math.random() * element.length);
+        const randomItem = element[randomIndex];
        document.getElementById("level").textContent =randomItem;
        
     }
